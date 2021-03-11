@@ -17,3 +17,9 @@ _pass_
 
 ## _3. TCP_UDP_Port_Scanner_
 _pass_
+
+
+## _Author_
+##### _Ivanenko Grigoriy / Иваненко Григорий_
+##### _UrFU KN-204 / УрФУ КН-204_ 
+##### _email: ivanenkogrig@yandex.ru_
