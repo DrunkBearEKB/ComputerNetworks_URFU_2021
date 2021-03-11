@@ -19,6 +19,22 @@ _pass_
 _pass_
 
 
+## _4. Caching_DNS_Server_
+_pass_
+
+
+## _5. SMTP_Server_
+_pass_
+
+
+## _6. POP3_Client_
+_pass_
+
+
+## _7. HTTP_Proxy_
+_pass_
+
+
 ## _Author_
 ##### _Ivanenko Grigoriy / Иваненко Григорий_
 ##### _UrFU KN-204 / УрФУ КН-204_ 
