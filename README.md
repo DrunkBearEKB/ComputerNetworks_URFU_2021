@@ -20,8 +20,8 @@ _pass_
     port_scanner.py [-h] [-p] [-s] [--timeouttcp [TIMEOUTTCP]] [--timeoutudp [TIMEOUTUDP]] [start] [end]
 
 #### _Positional arguments:_
-    start                 lower bound of port validation
-    end                   upper bound of port validation
+    start                 lower bound of port checking
+    end                   upper bound of port checking
 
 
 #### _Optional arguments:_
