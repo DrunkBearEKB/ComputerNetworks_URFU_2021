@@ -1,6 +1,12 @@
+import sys
+
+
 def main():
     pass
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        sys.exit(-1)
