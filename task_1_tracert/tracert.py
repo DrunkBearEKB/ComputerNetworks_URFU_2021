@@ -159,9 +159,13 @@ def checksum(_bytes):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('-t', '--time', action='store_true')
-    parser.add_argument('-c', '--clear', action='store_true')
-    parser.add_argument('ip')
+    parser.add_argument('-t', '--time', action='store_true',
+                        help='displays the results of time intervals '
+                             'in three columns')
+    parser.add_argument('-c', '--clear', action='store_true',
+                        help='clears the console screen before '
+                             'displaying the result')
+    parser.add_argument('ip', help='ip address or domain name')
     args = parser.parse_args()
 
     if args.clear:
