@@ -85,16 +85,6 @@ def send(ip_target, package_ttl, show_time=False):
                         for line in html_code.split('\n'):
                             if ':' in line:
                                 _index = line.index(':')
-                                # if 'Comment' in line[:_index] or \
-                                #         'href' in line[:_index] or \
-                                #         'href' in line[_index:] or \
-                                #         'http' in line[:_index] or \
-                                #         'http' in line[_index:] or \
-                                #         'remarks' in line[:_index] or \
-                                #         '% Note' in line[:_index]:
-                                #     continue
-                                # res[line[:_index].lstrip().rstrip()] = line[_index + 1:].lstrip().rstrip()
-
                                 if 'orig' in line[:_index] and \
                                         'AS' in line[_index + 1:]:
                                     res['AS'] = line[_index + 1:]\
