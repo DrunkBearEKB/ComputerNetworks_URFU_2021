@@ -11,12 +11,18 @@ HOST = '127.0.0.1'
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('-p', '--progress', action='store_true')
-    parser.add_argument('-s', '--save', action='store_true')
-    parser.add_argument('--timeouttcp', action='store', type=float, nargs='?')
-    parser.add_argument('--timeoutudp', action='store', type=float, nargs='?')
-    parser.add_argument('start', type=int, default=1, nargs='?')
-    parser.add_argument('end', type=int, default=65535, nargs='?')
+    parser.add_argument('-p', '--progress', action='store_true',
+                        help='shows the progress during the check')
+    parser.add_argument('-s', '--save', action='store_true',
+                        help='saves the results to a file')
+    parser.add_argument('--timeouttcp', action='store', type=float, nargs='?',
+                        help='sets the timeout for tcp')
+    parser.add_argument('--timeoutudp', action='store', type=float, nargs='?',
+                        help='sets the timeout for udp')
+    parser.add_argument('start', type=int, default=1, nargs='?',
+                        help='lower bound of port validation')
+    parser.add_argument('end', type=int, default=65535, nargs='?',
+                        help='upper bound of port validation')
     args = parser.parse_args()
 
     timeout_tcp = 0.01 if args.timeouttcp is None else args.timeouttcp

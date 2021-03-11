@@ -16,8 +16,23 @@ _pass_
 
 
 ## _3. TCP_UDP_Port_Scanner_
-_pass_
+#### _Usage:_
+    port_scanner.py [-h] [-p] [-s] [--timeouttcp [TIMEOUTTCP]] [--timeoutudp [TIMEOUTUDP]] [start] [end]
 
+#### _Positional arguments:_
+    start                 lower bound of port validation
+    end                   upper bound of port validation
+
+
+#### _Optional arguments:_
+    -h, --help            show this help message and exit
+    -p, --progress        shows the progress during the check
+    -s, --save            saves the results to a file
+    --timeouttcp [TIMEOUTTCP]
+                          sets the timeout for tcp
+    --timeoutudp [TIMEOUTUDP]
+                          sets the timeout for udp
+                          
 
 ## _4. Caching_DNS_Server_
 _pass_
