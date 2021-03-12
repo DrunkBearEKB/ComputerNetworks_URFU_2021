@@ -1,6 +1,6 @@
 ## _1. Tracert_
 #### _Usage:_
-    tracert.py [-h] [-t] [-c] ip
+    python tracert.py [-h] [-t] [-c] ip
 
 #### _Positional arguments:_
     ip           ip address or domain name
@@ -17,7 +17,7 @@ _pass_
 
 ## _3. TCP_UDP_Port_Scanner_
 #### _Usage:_
-    port_scanner.py [-h] [-p] [-s] [--timeouttcp [TIMEOUTTCP]] [--timeoutudp [TIMEOUTUDP]] [start] [end]
+    python port_scanner.py [-h] [-p] [-s] [--timeouttcp [TIMEOUTTCP]] [--timeoutudp [TIMEOUTUDP]] [start] [end]
 
 #### _Positional arguments:_
     start                 lower bound of port checking
