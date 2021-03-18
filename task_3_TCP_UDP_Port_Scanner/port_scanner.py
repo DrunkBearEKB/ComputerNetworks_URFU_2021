@@ -77,7 +77,7 @@ def main():
         sock_tcp = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         sock_tcp.settimeout(timeout_tcp)
         try:
-            connect = sock_tcp.connect((HOST, port))
+            sock_tcp.connect((HOST, port))
             dict_ports_used['TCP'].append(port)
             sock_tcp.close()
         except socket.timeout:

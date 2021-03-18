@@ -10,12 +10,11 @@ TIMEOUT = 500
 AMOUNT_HOPS = 30
 AMOUNT_TRIES = 10
 AMOUNT_COLUMNS = 3
-URL_AS = 'https://www.nic.ru/whois/?ipartner=3522&adv_id=41&utm_source=' \
-         'yandexdirect&utm_medium=cpc&utm_campaign=33_-_whois_russia_se' \
-         'arch&utm_content=%7Cc%3A16061145%7Cg%3A1146178723%7Cb%3A15832' \
-         '05103%7Ck%3A4863537821%7Cst%3Asearch%7Ca%3Ano%7Cs%3Anone%7Ct%' \
-         '3Apremium%7Cp%3A1%7Cr%3A%7Cdev%3Adesktop&yclid=10272300087207' \
-         '76462&searchWord='
+URL_AS = 'https://www.nic.ru/whois/?ipartner=3522&adv_id=41&utm_source=yand' \
+         'exdirect&utm_medium=cpc&utm_campaign=33_-_whois_russia_search&utm' \
+         '_content=%7Cc%3A16061145%7Cg%3A1146178723%7Cb%3A1583205103%7Ck%3A' \
+         '4863537821%7Cst%3Asearch%7Ca%3Ano%7Cs%3Anone%7Ct%3Apremium%7Cp%3A' \
+         '1%7Cr%3A%7Cdev%3Adesktop&yclid=1027230008720776462&searchWord='
 
 
 def check_input_validity(_input):
