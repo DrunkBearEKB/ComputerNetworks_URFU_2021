@@ -6,7 +6,7 @@ import sys
 import time
 import collections
 
-HOST = '127.0.0.1'
+HOST = 'www.google.com'
 
 
 def main():
@@ -19,6 +19,9 @@ def main():
                         help='sets the timeout for tcp')
     parser.add_argument('--timeoutudp', action='store', type=float, nargs='?',
                         help='sets the timeout for udp')
+    parser.add_argument('--host', type=str,
+                        default=socket.gethostbyname(socket.gethostname()),
+                        nargs='?', help='host address to check')
     parser.add_argument('start', type=int, default=1, nargs='?',
                         help='lower bound of port validation')
     parser.add_argument('end', type=int, default=65535, nargs='?',
@@ -101,13 +104,13 @@ def main():
         except OSError:
             pass
         except Exception as exception:
-            dict_warnings['TCP'].append(warning(port, exception,
+            dict_warnings['UDP'].append(warning(port, exception,
                                                 datetime.datetime.now()))
 
-        try:
-            dict_port_protocol[port] = socket.getservbyport(port)
-        except OSError:
-            pass
+        # try:
+        #     dict_port_protocol[port] = socket.getservbyport(port)
+        # except OSError:
+        #     pass
 
     if args.progress:
         print(
