@@ -1,6 +1,6 @@
 ## _1. Tracert_
 #### _Usage:_
-    python tracert.py [-h] [-t] [-c] ip
+    python traceroute.py [-h] [-t] [-c] ip
 
 #### _Positional arguments:_
     ip           ip address or domain name
@@ -11,43 +11,27 @@
     -c, --clear  clears the console screen before displaying the result
 
 
-## _2. SNTP_Server_
-_pass_
-
-
-## _3. TCP_UDP_Port_Scanner_
+## _4. Caching_DNS_Server_
 #### _Usage:_
-    python port_scanner.py [-h] [-p] [-s] [--timeouttcp [TIMEOUTTCP]] [--timeoutudp [TIMEOUTUDP]] [start] [end]
-
-#### _Positional arguments:_
-    start                 lower bound of port checking
-    end                   upper bound of port checking
-
+    python server.py [-h] [-d] [-i]
 
 #### _Optional arguments:_
-    -h, --help            show this help message and exit
-    -p, --progress        shows the progress during the check
-    -s, --save            saves the results to a file
-    --timeouttcp [TIMEOUTTCP]
-                          sets the timeout for tcp
-    --timeoutudp [TIMEOUTUDP]
-                          sets the timeout for udp
-                          
-
-## _4. Caching_DNS_Server_
-_pass_
+    -h, --help       show this help message and exit
+    -d, --debug      enable debug on
+    -i, --intercept  toggle intercept mode
 
 
-## _5. SMTP_Server_
-_pass_
+## _8. VK_API_
+#### _Usage:_
+    python friends_checker.py [-h] [-t] [-s] id
 
+#### _Positional arguments:_
+    id           users_id
 
-## _6. POP3_Client_
-_pass_
-
-
-## _7. HTTP_Proxy_
-_pass_
+#### _Optional arguments:_
+    -h, --help   show this help message and exit
+    -t, --table  show results as a table
+    -s, --save   saves result in file
 
 
 ## _Author_
