@@ -52,7 +52,16 @@ def main():
     for i in range(math.ceil(list_id_friends['count'] / 1000)):
         _slice = list_id_friends['items'][1000 * i: 1000 * (i + 1)]
         ids_current = ','.join(map(str, _slice))
-        list_friends = vk_api.users.get(user_ids=ids_current, v=VK_API_VERSION)
+
+        try:
+            list_friends = vk_api.users.get(
+                user_ids=ids_current,
+                v=VK_API_VERSION)
+        except Exception:
+            print('An error occurred during the execution of the program!'
+                  'Please check your internet connection.')
+            return
+
         list_friends.sort(key=lambda _user: user_to_string(_user))
 
         id_len = 0
