@@ -11,6 +11,14 @@
     -c, --clear  clears the console screen before displaying the result
 
 
+## _2. SNTP_Server_
+#### _Usage:_
+    python server.py [-h]
+
+#### _Optional arguments:_
+    -h, --help   show this help message and exit
+
+
 ## _4. Caching_DNS_Server_
 #### _Usage:_
     python server.py [-h] [-d] [-i]

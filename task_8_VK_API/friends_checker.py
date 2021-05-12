@@ -10,7 +10,7 @@ VK_API_VERSION = '5.21'
 
 
 def user_to_string(user):
-    return f'{user["last_name"]} {user["first_name"]}'
+    return f'{user["last_name"]} {user["first_name"]}'  # 1
 
 
 def output(string, args):
