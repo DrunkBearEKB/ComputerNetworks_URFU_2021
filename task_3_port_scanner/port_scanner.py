@@ -16,10 +16,15 @@ LOCK_PRINTING = Lock()
 def parse_args():
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('host', help='')
-    parser.add_argument('range', help='')
-    parser.add_argument('--udp', action='store_true', help='')
-    parser.add_argument('--check-protocols', action='store_true', help='')
+    parser.add_argument('host',
+                        help='host address to check')
+    parser.add_argument('range',
+                        help='the interval of ports to check, is set '
+                             'as a start-end, for example, 20-1000')
+    parser.add_argument('--udp', action='store_true',
+                        help='check the openness of udp ports')
+    parser.add_argument('--check-protocols', action='store_true',
+                        help='check which protocols work on the ports')
 
     return parser.parse_args()
 

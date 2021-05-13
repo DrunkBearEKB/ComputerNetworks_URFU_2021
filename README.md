@@ -19,6 +19,20 @@
     -h, --help   show this help message and exit
 
 
+## _3. Port_Scanner_
+#### _Usage:_
+    python port_scanner.py [-h] [--udp] [--check-protocols] host range
+
+#### _Positional arguments:_
+    host               host address to check
+    range              the interval of ports to check, is set as a start-end, for example, 20-1000
+
+#### _Optional arguments:_
+    -h, --help         show this help message and exit
+    --udp              check the openness of udp ports
+    --check-protocols  check which protocols work on the ports
+
+
 ## _4. Caching_DNS_Server_
 #### _Usage:_
     python server.py [-h] [-d] [-i]
